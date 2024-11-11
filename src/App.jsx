@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
+      <h2 className='mt-12'></h2>
       <Home></Home>
-     
     </>
   )
 }
