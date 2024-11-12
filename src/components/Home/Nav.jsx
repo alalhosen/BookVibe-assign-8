@@ -1,7 +1,7 @@
 
 const Nav = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div>
             <div className="navbar-start lg:hidden">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,12 +31,12 @@ const Nav = () => {
             </div>
 
             <div className="flex justify-evenly">
-                <a className="btn btn-ghost text-3xl font-bold italic"><span className="text-red-400 text-4xl">B</span>ook Vibe</a>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="px-1 flex ">
-                        <li className=""><a>Home</a></li>
-                        <li className="ml-5 mr-5"><a>Listed Books</a></li>
-                        <li><a>Pages to Read</a></li>
+                <a className="btn btn-ghost gap-0 text-3xl font-bold italic"><span className="text-red-500 text-5xl">B</span>ook Vibe</a>
+                <div className="items-center hidden lg:flex">
+                    <ul className="px-12 flex">
+                        <li className="font-bold text-primary"><a>Home</a></li>
+                        <li className="ml-8 mr-8 font-bold"><a>Listed Books</a></li>
+                        <li className="font-bold"><a>Pages to Read</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
