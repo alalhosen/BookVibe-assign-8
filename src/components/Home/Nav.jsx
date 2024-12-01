@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
@@ -27,10 +27,10 @@ const Nav = () => {
             </div>
 
             <div className="flex justify-evenly">
-                <Link to className="gap-0 font-bold text-3xl italic btn btn-ghost"><span className="text-5xl text-red-500">B</span>ook Vibe</Link>
+                <Link to='/' className="gap-0 font-bold text-3xl italic btn btn-ghost"><span className="text-5xl text-red-500">B</span>ook Vibe</Link>
                 <div className="flex-none">
                     <ul className="sm:flex items-center gap-5 hidden px-15 menu menu-horizontal">
-                        <Link to='/' className="font-bold text-primary">Home</Link>
+                        <NavLink to='/' className={({ isActive }) => isActive ? 'font-bold text-primary' : 'font-bold'}>Home</NavLink>
                         <Link to='/listedBooks' className="mr-8 ml-8 font-bold">Listed Books</Link>
                         <li className="font-bold"><a>Pages to Read</a></li>
                     </ul>
