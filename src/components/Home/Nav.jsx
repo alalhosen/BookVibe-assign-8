@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
         <div>
-            <div className="navbar-start lg:hidden">
+            <div className="lg:hidden navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <div tabIndex={0} role="button" className="lg:hidden btn btn-ghost">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
+                            className="w-5 h-5"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -20,7 +21,7 @@ const Nav = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        className="z-[1] bg-base-100 shadow mt-3 p-2 rounded-box w-52 dropdown-content menu menu-sm">
 
                         {/* <li><a>Home</a></li>
                         <li><a>Listed Books</a></li>
@@ -31,17 +32,17 @@ const Nav = () => {
             </div>
 
             <div className="flex justify-evenly">
-                <a className="btn btn-ghost gap-0 text-3xl font-bold italic"><span className="text-red-500 text-5xl">B</span>ook Vibe</a>
-                <div className="items-center hidden lg:flex">
-                    <ul className="px-12 flex">
-                        <li className="font-bold text-primary"><a>Home</a></li>
-                        <li className="ml-8 mr-8 font-bold"><a>Listed Books</a></li>
+                <a className="gap-0 font-bold text-3xl italic btn btn-ghost"><span className="text-5xl text-red-500">B</span>ook Vibe</a>
+                <div className="lg:flex items-center hidden">
+                    <ul className="flex px-12">
+                        <Link to='/' className="font-bold text-primary">Home</Link>
+                        <Link to='/listedBooks' className="mr-8 ml-8 font-bold">Listed Books</Link>
                         <li className="font-bold"><a>Pages to Read</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn mr-4 text-xl px-6 py-3 font-semibold rounded-lg bg-green-500 text-white">Sign In</a>
-                    <a className="btn text-xl px-6 py-3 font-semibold rounded-lg bg-cyan-400 text-white">Sign Up</a>
+                    <a className="bg-green-500 mr-4 px-6 py-3 rounded-lg font-semibold text-white text-xl btn">Sign In</a>
+                    <a className="bg-cyan-400 px-6 py-3 rounded-lg font-semibold text-white text-xl btn">Sign Up</a>
                 </div>
             </div>
         </div>
