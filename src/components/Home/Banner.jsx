@@ -1,16 +1,16 @@
+import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div className="mt-20 bg-gray-200 rounded-xl p-24">
-            <div className="flex flex-col lg:flex-row-reverse">
+        <div className="bg-gray-200 mt-20 p-24 rounded-xl">
+            <div className="flex lg:flex-row-reverse flex-col">
                 <img
                     src="https://i.ibb.co.com/Fx7CZy6/61lh-BP2-Uf9-L-SY466.jpg"
-                    className="rounded-lg shadow-2xl" />
+                    className="shadow-2xl rounded-lg" />
                 <div className="pr-24">
-                    <h1 className="text-6xl py- font-bold mb-4 mt-8">Books to freshen up your bookshelf</h1>
+                    <h1 className="mt-8 mb-4 py- font-bold text-6xl">Books to freshen up your bookshelf</h1>
 
-                    <button className=" 
-                    btn mt-12 text-xl px-6 py-3 font-semibold rounded-lg bg-green-500 text-white">View The List</button>
+                    <Link to='/listedBooks' className="bg-green-500 mt-12 px-6 py-3 rounded-lg font-semibold text-white text-xl btn">View The List</Link>
                 </div>
             </div>
         </div>
