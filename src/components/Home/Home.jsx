@@ -10,9 +10,8 @@ const Home = () => {
                 <Nav></Nav>
             </div>
             <Banner></Banner>
+            <h1>This is Home nav page.</h1>
         </>
-
-
     );
 };
 
