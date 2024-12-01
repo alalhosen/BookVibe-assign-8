@@ -22,19 +22,14 @@ const Nav = () => {
                     <ul
                         tabIndex={0}
                         className="z-[1] bg-base-100 shadow mt-3 p-2 rounded-box w-52 dropdown-content menu menu-sm">
-
-                        {/* <li><a>Home</a></li>
-                        <li><a>Listed Books</a></li>
-                        <li><a>Pages to Read</a></li> */}
-
                     </ul>
                 </div>
             </div>
 
             <div className="flex justify-evenly">
-                <a className="gap-0 font-bold text-3xl italic btn btn-ghost"><span className="text-5xl text-red-500">B</span>ook Vibe</a>
-                <div className="lg:flex items-center hidden">
-                    <ul className="flex px-12">
+                <Link to className="gap-0 font-bold text-3xl italic btn btn-ghost"><span className="text-5xl text-red-500">B</span>ook Vibe</Link>
+                <div className="flex-none">
+                    <ul className="sm:flex items-center gap-5 hidden px-15 menu menu-horizontal">
                         <Link to='/' className="font-bold text-primary">Home</Link>
                         <Link to='/listedBooks' className="mr-8 ml-8 font-bold">Listed Books</Link>
                         <li className="font-bold"><a>Pages to Read</a></li>

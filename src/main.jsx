@@ -11,15 +11,23 @@ import Home from './components/Home/Home.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <MainLayout/>,
-    children:[
+    element: <MainLayout />,
+    children: [
       {
-        index:true,
-        element:<Home/>
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/listedBooks',
+        element: <ListedBooks />,
+      },
+      {
+        path: '/pagesToRead',
+        element: <PagesToResd />
       }
     ]
   },
-  
+
 ])
 
 createRoot(document.getElementById('root')).render(
