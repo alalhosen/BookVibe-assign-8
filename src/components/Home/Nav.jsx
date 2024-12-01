@@ -31,8 +31,10 @@ const Nav = () => {
                 <div className="flex-none">
                     <ul className="sm:flex items-center gap-5 hidden px-15 menu menu-horizontal">
                         <NavLink to='/' className={({ isActive }) => isActive ? 'font-bold text-primary' : 'font-bold'}>Home</NavLink>
-                        <Link to='/listedBooks' className="mr-8 ml-8 font-bold">Listed Books</Link>
-                        <li className="font-bold"><a>Pages to Read</a></li>
+
+                        <NavLink to='/listedBooks' className={({ isActive }) => isActive ? 'font-bold text-primary' : 'font-bold'}>Listed Books</NavLink>
+                        
+                        <NavLink to='/pagesToRead' className={({ isActive }) => isActive ? 'font-bold text-primary' : 'font-bold'}>Pages to Read</NavLink>
                     </ul>
                 </div>
                 <div className="navbar-end">

@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Nav from "../components/Home/Nav";
+import Footer from "../components/footer/Footer";
 
 
 const MainLayout = () => {
@@ -10,7 +11,10 @@ const MainLayout = () => {
             </div>
 
             {/* packet */}
-            <Outlet/>
+            <div className="min-h-[calc(100vh-116px)]">
+                <Outlet />
+            </div>
+            <Footer />
         </div>
     );
 };
