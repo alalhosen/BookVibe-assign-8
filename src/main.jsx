@@ -20,6 +20,7 @@ const router = createBrowserRouter([
       {
         path: '/listedBooks',
         element: <ListedBooks />,
+        loader:fetch('https://dev.to/api/articles?per_page=9&top=7')
       },
       {
         path: '/pagesToRead',
@@ -33,6 +34,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-    {/* <App /> */}
   </StrictMode>,
 )
